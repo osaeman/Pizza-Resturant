@@ -18,6 +18,13 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
+    <!-- Splide Js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.6/dist/js/splide.min.js"></script>
+
     <!-- Swiper js -->
     <link
       rel="stylesheet"
@@ -27,14 +34,29 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="./style/style.css" />
-    <!-- <link rel="stylesheet" href="./style/responsive.css" /> -->
+    <link rel="stylesheet" href="./style/responsive.css" />
   </head>
 
   <body>
+    <!-- Pop Up -->
+    <div class="popup-overlay">
+      <div class="popup-container">
+        <div class="popup-card">
+          <h2>Amazing Deals</h2>
+          <p>
+            "Get ready to be amazed by our incredible pizza deals that will
+            leave your taste buds dancing with delight!"
+          </p>
+          <button id="close-popup">Close</button>
+        </div>
+      </div>
+    </div>
     <!-- Pre header -->
-    <div class="pre-header">
-      <img src="./assets/pre-header.png" alt="" />
-      <span>For placing order call us at 8344-4300</span>
+    <div class="pre-header-container">
+      <div class="pre-header container">
+        <img src="./assets/pre-header.png" alt="" />
+        <span>For placing order call us at 8344-4300</span>
+      </div>
     </div>
 
     <!-- Header -->
@@ -62,30 +84,29 @@
 
     <main>
       <section class="hero-section" id="home">
-        <div class="hero-text">
-          <h1>We prepared the pizza recipe you had in mind.</h1>
-          <p>
-            Where Tradition Meets Innovation: Elevating Pizza Craftsmanship to a
-            New Standard of Excellence, One Tantalizing Slice at a Time"
-          </p>
-          <div class="hero-section-buttons">
-            <!-- <a href="#order">Order</a>
-            <a href="#menu">Menu</a> -->
+        <div class="hero-text-container">
+          <div class="hero-text container">
+            <h1>We prepared the pizza recipe you had in mind.</h1>
+            <p>
+              Where Tradition Meets Innovation: Elevating Pizza Craftsmanship to
+              a New Standard of Excellence, One Tantalizing Slice at a Time"
+            </p>
+            <div class="hero-section-buttons">
+              <ul>
+                <li>
+                  <a href="#menu"> Menu</a>
 
-            <ul>
-              <li>
-                home
-                <span></span><span></span><span></span><span></span>
-              </li>
-            </ul>
+                  <span></span><span></span><span></span><span></span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+
         <!-- Swiper js -->
         <!-- Slider main container -->
         <div class="swiper">
-          <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
-            <!-- Slides -->
             <div class="swiper-slide">
               <img src="./assets/Hero-img-1.jpg" alt="" />
             </div>
@@ -96,44 +117,10 @@
               <img src="./assets/pizza-3007395_1920.jpg" alt="" />
             </div>
           </div>
-
-          <!-- <div class="swiper-pagination"></div> -->
-        </div>
-      </section>
-      <!-- Our Services Section -->
-      <section class="services-section">
-        <div class="services-section-grid">
-          <div class="services-section-grid-left">
-            <h2>Our Services</h2>
-            <p>
-              Experience seamless service that caters to your cravings. From
-              ordering to your doorstep, we're here to make your pizza
-              experience extraordinary
-            </p>
-
-            <button class="button type1">Order Now</button>
-          </div>
-          <div class="services-section-grid-right">
-            <div>
-              <i class="fas fa-pizza-slice"></i>
-              <h3>Healthy Foods</h3>
-              <p>Eat Well, Savor Flavor: Healthy Pizzas, Happy You</p>
-            </div>
-            <div>
-              <i class="fas fa-biking"></i>
-              <h3>Fastest Delivery</h3>
-              <p>Hot and Fresh to Your Doorstep, Pronto</p>
-            </div>
-            <div>
-              <i class="fas fa-badge-percent"></i>
-              <h3>Awesome Deals</h3>
-              <p>"Feast Your Way to Savings: Unbeatable Deals Await</p>
-            </div>
-          </div>
         </div>
       </section>
       <!-- About Us Section -->
-      <section class="about-us-section container">
+      <section class="about-us-section container" id="aboutus">
         <div class="about-us-section-gridbox">
           <div class="about-us-section-gridbox-left">
             <img src="./assets/lip-jVcha8wHtg8-unsplash.jpg" alt="" />
@@ -150,33 +137,222 @@
               <span><i class="far fa-pizza-slice"></i></span>Pizza Resturant
             </h2>
             <p>
-              At Lulu's Resturant, our passion for pizza is at the heart of
-              everything we do. With years of culinary expertise and a
-              commitment to quality, we've crafted a menu that's not just a meal
-              but an experience. Our journey began with a simple belief: that
-              pizza is more than just a dish; it's a celebration of flavors, a
-              symbol of togetherness, and a source of pure joy.
-            </p>
-            <p>
-              Our commitment to excellence starts with our ingredients. We
-              source the finest, freshest produce and the highest-quality
-              cheeses, and our dough is made from scratch daily to ensure that
-              every pizza we create is a masterpiece. We take pride in our
-              creative combinations, from classic favorites to unique,
-              chef-inspired creations, all designed to tantalize your taste
-              buds.
+              Welcome to Lulu's pizza, where passion for pizza has been our
+              tradition for over two decades. For the past 20 years we've been
+              your extended family; we've watched families grow, friends reunite
+              and new faces become old friends. Our commitment to being a
+              cornerstone of your neighbourhood is as strong as ever. Let's make
+              the next 20 years even more memorable together.
             </p>
           </div>
         </div>
       </section>
+      <!-- Menu-Section -->
+      <section class="menu-section" id="menu">
+        <div class="menu-section-container container">
+          <div class="menus-section-tabs"></div>
+          <div class="menu-section-slider">
+            <div id="splideOne" class="splide">
+              <a
+                class="btn-flip"
+                data-back="Pizza"
+                data-front="Pizza"
+                id="pizza"
+              ></a>
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide pizza">
+                    <img src="./assets/pizza1.png" alt="" />
+                  </li>
+                  <li class="splide__slide pizza">
+                    <img src="./assets/pizza2.png" alt="" />
+                  </li>
+                  <li class="splide__slide pizza">
+                    <img src="./assets/pizza3.png" alt="" />
+                  </li>
+                  <li class="splide__slide pizza">
+                    <img src="./assets/pizza4.png" alt="" />
+                  </li>
+                  <li class="splide__slide pizza">
+                    <img src="./assets/pizza5.png" alt="" />
+                  </li>
+                  <li class="splide__slide pizza">
+                    <img src="./assets/pizza6.png" alt="" />
+                  </li>
+                  <li class="splide__slide pizza">
+                    <img src="./assets/pizza7.png" alt="" />
+                  </li>
+                  <li class="splide__slide pizza">
+                    <img src="./assets/pizza8.png" alt="" />
+                  </li>
+                  <li class="splide__slide pizza">
+                    <img src="./assets/pizza9.png" alt="" />
+                  </li>
+                  <li class="splide__slide pizza">
+                    <img src="./assets/pizza10.png" alt="" />
+                  </li>
+                  <li class="splide__slide pizza">
+                    <img src="./assets/pizza11.png" alt="" />
+                  </li>
+                  <li class="splide__slide pizza">
+                    <img src="./assets/pizza12.png" alt="" />
+                  </li>
+                  <li class="splide__slide pizza">
+                    <img src="./assets/pizza13.png" alt="" />
+                  </li>
+                  <li class="splide__slide pizza">
+                    <img src="./assets/pizza14.png" alt="" />
+                  </li>
+                  <li class="splide__slide pizza">
+                    <img src="./assets/pizza15.png" alt="" />
+                  </li>
+                  <li class="splide__slide pizza">
+                    <img src="./assets/pizza16.png" alt="" />
+                  </li>
+                  <li class="splide__slide pizza">
+                    <img src="./assets/pizza17.png" alt="" />
+                  </li>
+                  <li class="splide__slide pizza">
+                    <img src="./assets/pizza18.png" alt="" />
+                  </li>
+                  <li class="splide__slide pizza">
+                    <img src="./assets/pizza19.png" alt="" />
+                  </li>
+                  <li class="splide__slide pizza">
+                    <img src="./assets/pizza20.png" alt="" />
+                  </li>
+                  <li class="splide__slide pizza">
+                    <img src="./assets/pizza21.png" alt="" />
+                  </li>
+                  <li class="splide__slide pizza">
+                    <img src="./assets/pizza22.png" alt="" />
+                  </li>
+                  <li class="splide__slide pizza">
+                    <img src="./assets/pizza23.png" alt="" />
+                  </li>
+                  <li class="splide__slide pizza">
+                    <img src="./assets/pizza24.png" alt="" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div id="splideTwo" class="splide">
+              <a
+                class="btn-flip"
+                data-back="Pasta"
+                data-front="Pasta"
+                id="pasta"
+              ></a>
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide pasta">
+                    <img src="./assets/pasta1.png" alt="" />
+                  </li>
+                  <li class="splide__slide pasta">
+                    <img src="./assets/pasta2.png" alt="" />
+                  </li>
+                  <li class="splide__slide pasta">
+                    <img src="./assets/pasta3.png" alt="" />
+                  </li>
+                  <li class="splide__slide pasta">
+                    <img src="./assets/pasta4.png" alt="" />
+                  </li>
+                  <li class="splide__slide pasta">
+                    <img src="./assets/pasta5.png" alt="" />
+                  </li>
+                  <li class="splide__slide pasta">
+                    <img src="./assets/pasta6.png" alt="" />
+                  </li>
+                  <li class="splide__slide pasta">
+                    <img src="./assets/pasta7.png" alt="" />
+                  </li>
+                  <li class="splide__slide pasta">
+                    <img src="./assets/pasta8.png" alt="" />
+                  </li>
+                  <li class="splide__slide pasta">
+                    <img src="./assets/pasta9.png" alt="" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div id="splideThree" class="splide">
+              <a
+                class="btn-flip"
+                data-back="Schnitzel and chips"
+                data-front="Schnitzel and chips"
+                id="chips"
+              ></a>
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide chips">
+                    <img src="./assets/chips1.png" alt="" />
+                  </li>
+                  <li class="splide__slide chips">
+                    <img src="./assets/chips2.png" alt="" />
+                  </li>
+                  <li class="splide__slide chips">
+                    <img src="./assets/chips3.png" alt="" />
+                  </li>
+                  <li class="splide__slide chips">
+                    <img src="./assets/chips4.png" alt="" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div id="splideFour" class="splide">
+              <a
+                class="btn-flip"
+                data-back="Pork ribs & Wings"
+                data-front="Pork ribs & Wings"
+                id="wings"
+              ></a>
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide wings">
+                    <img src="./assets/wings1.png" alt="" />
+                  </li>
+                  <li class="splide__slide wings">
+                    <img src="./assets/wings2.png" alt="" />
+                  </li>
+                  <li class="splide__slide wings">
+                    <img src="./assets/wings3.png" alt="" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div id="splideFive" class="splide">
+              <a
+                class="btn-flip"
+                data-back="Others"
+                data-front="Others"
+                id="others"
+              ></a>
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide others">
+                    <img src="./assets/desserts.png" alt="" />
+                  </li>
+                  <li class="splide__slide others">
+                    <img src="./assets/desserts.png" alt="" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Delivery Section -->
       <section class="delivery-section">
         <div class="delivery-section-grid container">
           <div class="delivery-section-grid-left">
-            <img src="./assets/pngwing.com.png" alt="" />
+            <img src="./assets/pre-header.png" alt="" />
           </div>
           <div class="delivery-section-grid-right">
-            <h2>Fastest Delivery</h2>
+            <h2>Home Delivery</h2>
             <ul>
               <li>Minimum Order For delivery is $20.00</li>
               <li>Extra Charges apply for additional toppings</li>
@@ -187,7 +363,7 @@
         </div>
       </section>
       <!-- Contact Section -->
-      <section class="contact-section">
+      <section class="contact-section" id="location">
         <div class="contact-section-grid container">
           <div class="contact-section-grid-left">
             <iframe
@@ -215,7 +391,9 @@
 
             <span>
               <i class="fas fa-link"></i>
-              <i class="fab fa-facebook-square"></i>
+              <a href="https:/www.facebook.com">
+                <i class="fab fa-facebook-square"></i
+              ></a>
             </span>
           </div>
         </div>
@@ -223,27 +401,6 @@
     </main>
 
     <!-- Initialize Swiper -->
-    <script>
-      // Main Swiper
-      const swiper = new Swiper(".swiper", {
-        // Optional parameters
-        direction: "vertical",
-        loop: true,
-        speed: 3500,
-        centeredSlides: true,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: true,
-          reverseDirection: true,
-        },
-        controller: {
-          inverse: true,
-        },
-        // Navigation arrows
-        pagination: {
-          el: ".swiper-pagination",
-        },
-      });
-    </script>
+    <script src="./script/app.js"></script>
   </body>
 </html>
