@@ -121,18 +121,25 @@
     transform: translateY(-35%);
   }
   .hero-text h1 {
-    font-size: 2.5rem;
-    line-height: 27px;
+    font-size: 2.2rem;
+    line-height: 23px;
     width: 75%;
+    font-weight: 900;
   }
   .hero-text p {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     width: 75%;
   }
 
   .hero-section-buttons ul li {
     width: 120px;
     height: 2.8em;
+  }
+  .swiper {
+    display: none;
+  }
+  .hero-img-mob {
+    display: block;
   }
   .delivery-section-grid-left img {
     width: 45%;

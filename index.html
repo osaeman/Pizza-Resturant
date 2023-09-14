@@ -18,12 +18,6 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-    <!-- Splide Js -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.6/dist/js/splide.min.js"></script>
 
     <!-- Swiper js -->
     <link
@@ -105,17 +99,22 @@
 
         <!-- Swiper js -->
         <!-- Slider main container -->
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="./assets/Hero-img-1.jpg" alt="" />
+        <div class="hero-img">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./assets/hero-1.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/hero-2.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/hero-3.jpg" alt="" />
+              </div>
             </div>
-            <div class="swiper-slide">
-              <img src="./assets/pizza-2068272_1920.jpg" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/pizza-3007395_1920.jpg" alt="" />
-            </div>
+          </div>
+          <div class="hero-img-mob">
+            <img src="./assets/hero-2.jpg" alt="" />
           </div>
         </div>
       </section>
@@ -150,197 +149,52 @@
       <!-- Menu-Section -->
       <section class="menu-section" id="menu">
         <div class="menu-section-container container">
-          <div class="menus-section-tabs"></div>
-          <div class="menu-section-slider">
-            <div id="splideOne" class="splide">
-              <a
-                class="btn-flip"
-                data-back="Pizza"
-                data-front="Pizza"
-                id="pizza"
-              ></a>
-              <div class="splide__track">
-                <ul class="splide__list">
-                  <li class="splide__slide pizza">
-                    <img src="./assets/pizza1.png" alt="" />
-                  </li>
-                  <li class="splide__slide pizza">
-                    <img src="./assets/pizza2.png" alt="" />
-                  </li>
-                  <li class="splide__slide pizza">
-                    <img src="./assets/pizza3.png" alt="" />
-                  </li>
-                  <li class="splide__slide pizza">
-                    <img src="./assets/pizza4.png" alt="" />
-                  </li>
-                  <li class="splide__slide pizza">
-                    <img src="./assets/pizza5.png" alt="" />
-                  </li>
-                  <li class="splide__slide pizza">
-                    <img src="./assets/pizza6.png" alt="" />
-                  </li>
-                  <li class="splide__slide pizza">
-                    <img src="./assets/pizza7.png" alt="" />
-                  </li>
-                  <li class="splide__slide pizza">
-                    <img src="./assets/pizza8.png" alt="" />
-                  </li>
-                  <li class="splide__slide pizza">
-                    <img src="./assets/pizza9.png" alt="" />
-                  </li>
-                  <li class="splide__slide pizza">
-                    <img src="./assets/pizza10.png" alt="" />
-                  </li>
-                  <li class="splide__slide pizza">
-                    <img src="./assets/pizza11.png" alt="" />
-                  </li>
-                  <li class="splide__slide pizza">
-                    <img src="./assets/pizza12.png" alt="" />
-                  </li>
-                  <li class="splide__slide pizza">
-                    <img src="./assets/pizza13.png" alt="" />
-                  </li>
-                  <li class="splide__slide pizza">
-                    <img src="./assets/pizza14.png" alt="" />
-                  </li>
-                  <li class="splide__slide pizza">
-                    <img src="./assets/pizza15.png" alt="" />
-                  </li>
-                  <li class="splide__slide pizza">
-                    <img src="./assets/pizza16.png" alt="" />
-                  </li>
-                  <li class="splide__slide pizza">
-                    <img src="./assets/pizza17.png" alt="" />
-                  </li>
-                  <li class="splide__slide pizza">
-                    <img src="./assets/pizza18.png" alt="" />
-                  </li>
-                  <li class="splide__slide pizza">
-                    <img src="./assets/pizza19.png" alt="" />
-                  </li>
-                  <li class="splide__slide pizza">
-                    <img src="./assets/pizza20.png" alt="" />
-                  </li>
-                  <li class="splide__slide pizza">
-                    <img src="./assets/pizza21.png" alt="" />
-                  </li>
-                  <li class="splide__slide pizza">
-                    <img src="./assets/pizza22.png" alt="" />
-                  </li>
-                  <li class="splide__slide pizza">
-                    <img src="./assets/pizza23.png" alt="" />
-                  </li>
-                  <li class="splide__slide pizza">
-                    <img src="./assets/pizza24.png" alt="" />
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div id="splideTwo" class="splide">
-              <a
-                class="btn-flip"
-                data-back="Pasta"
-                data-front="Pasta"
-                id="pasta"
-              ></a>
-              <div class="splide__track">
-                <ul class="splide__list">
-                  <li class="splide__slide pasta">
-                    <img src="./assets/pasta1.png" alt="" />
-                  </li>
-                  <li class="splide__slide pasta">
-                    <img src="./assets/pasta2.png" alt="" />
-                  </li>
-                  <li class="splide__slide pasta">
-                    <img src="./assets/pasta3.png" alt="" />
-                  </li>
-                  <li class="splide__slide pasta">
-                    <img src="./assets/pasta4.png" alt="" />
-                  </li>
-                  <li class="splide__slide pasta">
-                    <img src="./assets/pasta5.png" alt="" />
-                  </li>
-                  <li class="splide__slide pasta">
-                    <img src="./assets/pasta6.png" alt="" />
-                  </li>
-                  <li class="splide__slide pasta">
-                    <img src="./assets/pasta7.png" alt="" />
-                  </li>
-                  <li class="splide__slide pasta">
-                    <img src="./assets/pasta8.png" alt="" />
-                  </li>
-                  <li class="splide__slide pasta">
-                    <img src="./assets/pasta9.png" alt="" />
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div id="splideThree" class="splide">
-              <a
-                class="btn-flip"
-                data-back="Schnitzel and chips"
-                data-front="Schnitzel and chips"
-                id="chips"
-              ></a>
-              <div class="splide__track">
-                <ul class="splide__list">
-                  <li class="splide__slide chips">
-                    <img src="./assets/chips1.png" alt="" />
-                  </li>
-                  <li class="splide__slide chips">
-                    <img src="./assets/chips2.png" alt="" />
-                  </li>
-                  <li class="splide__slide chips">
-                    <img src="./assets/chips3.png" alt="" />
-                  </li>
-                  <li class="splide__slide chips">
-                    <img src="./assets/chips4.png" alt="" />
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div id="splideFour" class="splide">
-              <a
-                class="btn-flip"
-                data-back="Pork ribs & Wings"
-                data-front="Pork ribs & Wings"
-                id="wings"
-              ></a>
-              <div class="splide__track">
-                <ul class="splide__list">
-                  <li class="splide__slide wings">
-                    <img src="./assets/wings1.png" alt="" />
-                  </li>
-                  <li class="splide__slide wings">
-                    <img src="./assets/wings2.png" alt="" />
-                  </li>
-                  <li class="splide__slide wings">
-                    <img src="./assets/wings3.png" alt="" />
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div id="splideFive" class="splide">
-              <a
-                class="btn-flip"
-                data-back="Others"
-                data-front="Others"
-                id="others"
-              ></a>
-              <div class="splide__track">
-                <ul class="splide__list">
-                  <li class="splide__slide others">
-                    <img src="./assets/desserts.png" alt="" />
-                  </li>
-                  <li class="splide__slide others">
-                    <img src="./assets/desserts.png" alt="" />
-                  </li>
-                </ul>
-              </div>
-            </div>
+          <div class="menus-section-tabs">
+            <a
+              class="btn-flip"
+              data-back="Pizza"
+              data-front="Pizza"
+              id="pizza"
+            ></a>
+            <a
+              class="btn-flip"
+              data-back="Pasta"
+              data-front="Pasta"
+              id="pasta"
+            ></a>
+            <a
+              class="btn-flip"
+              data-back="Pork ribs & Wings"
+              data-front="Schnitzel & Chips"
+              id="chips"
+            ></a>
+            <a
+              class="btn-flip"
+              data-back="Pork ribs & Wings"
+              data-front="Pork ribs & Wings"
+              id="wings"
+            ></a>
+            <a
+              class="btn-flip"
+              data-back="Drinks"
+              data-front="Drinks"
+              id="drinks"
+            ></a>
+            <a
+              class="btn-flip"
+              data-back="Desserts"
+              data-front="Desserts"
+              id="desserts"
+            ></a>
+            <a
+              class="btn-flip"
+              data-back="Meal Deals"
+              data-front="Meal Deals"
+              id="deals"
+            ></a>
+          </div>
+          <div class="menu-img-display">
+            <img src="./assets/pizza.PNG" alt="" class="menu-img" />
           </div>
         </div>
       </section>

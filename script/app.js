@@ -1,111 +1,5 @@
 // Splide Js
 document.addEventListener("DOMContentLoaded", function () {
-  new Splide("#splideOne", {
-    type: "loop",
-    perPage: 3,
-    focus: "center",
-    autoplay: true,
-    interval: 3000,
-    updateOnMove: true,
-    pagination: false,
-    padding: "0",
-    throttle: 300,
-    breakpoints: {
-      768: {
-        perPage: 1,
-        padding: "0",
-      },
-      1024: {
-        perPage: 3,
-        padding: "0",
-      },
-    },
-  }).mount();
-  new Splide("#splideTwo", {
-    type: "loop",
-    perPage: 3,
-    focus: "center",
-    autoplay: true,
-    interval: 3000,
-    updateOnMove: true,
-    pagination: false,
-    padding: "0",
-    throttle: 300,
-    breakpoints: {
-      768: {
-        perPage: 1,
-        padding: "0",
-      },
-      1024: {
-        perPage: 3,
-        padding: "0",
-      },
-    },
-  }).mount();
-
-  new Splide("#splideThree", {
-    type: "loop",
-    perPage: 3,
-    focus: "center",
-    autoplay: true,
-    interval: 3000,
-    updateOnMove: true,
-    pagination: false,
-    padding: "0",
-    throttle: 300,
-    breakpoints: {
-      768: {
-        perPage: 1,
-        padding: "0",
-      },
-      1024: {
-        perPage: 3,
-        padding: "0",
-      },
-    },
-  }).mount();
-  new Splide("#splideFour", {
-    type: "loop",
-    perPage: 3,
-    focus: "center",
-    autoplay: true,
-    interval: 3000,
-    updateOnMove: true,
-    pagination: false,
-    padding: "0",
-    throttle: 300,
-    breakpoints: {
-      768: {
-        perPage: 1,
-        padding: "0",
-      },
-      1024: {
-        perPage: 3,
-        padding: "0",
-      },
-    },
-  }).mount();
-  new Splide("#splideFive", {
-    type: "loop",
-    perPage: 3,
-    focus: "center",
-    autoplay: true,
-    interval: 3000,
-    updateOnMove: true,
-    pagination: false,
-    padding: "0",
-    throttle: 300,
-    breakpoints: {
-      768: {
-        perPage: 1,
-        padding: "0",
-      },
-      1024: {
-        perPage: 3,
-        padding: "0",
-      },
-    },
-  }).mount();
   //   Swiper Js
   // Main Swiper
   const swiper = new Swiper(".swiper", {
@@ -154,4 +48,41 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("load", openPopup);
 
   closePopupButton.addEventListener("click", closePopup);
+
+  // Switching Menus
+  const menu_img = document.querySelector(".menu-img");
+  const menu_btn = document.querySelectorAll(".btn-flip");
+
+  menu_btn.forEach((item) => {
+    item.addEventListener("click", (e) => {
+      console.log("osma");
+      const menu = e.target.id;
+
+      switch (menu) {
+        case "pizza":
+          menu_img.src = "./assets/pizza.PNG";
+          break;
+        case "pasta":
+          menu_img.src = "./assets/pasta.PNG";
+          break;
+        case "chips":
+          menu_img.src = "./assets/chips.PNG";
+          break;
+        case "wings":
+          menu_img.src = "./assets/wings.PNG";
+          break;
+        case "drinks":
+          menu_img.src = "./assets/drinks.PNG";
+          break;
+        case "desserts":
+          menu_img.src = "./assets/desserts.PNG";
+          break;
+        case "deals":
+          menu_img.src = "./assets/deals.PNG";
+          break;
+        default:
+          menu_img.src = "./assets/pizza.PNG";
+      }
+    });
+  });
 });
