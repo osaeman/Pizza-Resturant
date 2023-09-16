@@ -18,6 +18,7 @@
   --fifth-color: #fac564;
   --grey-shade-light: #f8fafb;
   --grey-shade-dark: #f2f5f7;
+  --logo-color: #f13430;
 }
 html {
   scroll-behavior: smooth;
@@ -114,55 +115,39 @@ a {
 }
 /* Pre Header */
 .pre-header-container {
-  background-color: var(--secondary-color);
-  padding: 10px 20px;
+  background-color: var(--logo-color);
+  padding: 12px 20px;
 }
-.pre-header {
-  color: var(--grey-shade-light);
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 1.7rem;
-  font-weight: 500;
+
+.pre-header-logo img {
+  width: 170px;
+  margin: 0 auto;
+  aspect-ratio: 3/1;
+  object-fit: cover;
+  object-position: center;
+}
+/* ------------Header------------- */
+
+.header-container {
+  background-color: var(--secondary-color);
+}
+.header-flexbox {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.pre-header img {
-  width: 65px;
-  margin-right: 20px;
-}
-/* ------------Header------------- */
-
-.header-container {
-  background-color: var(--primary-color);
-}
-.header-flexbox {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.header-flexbox-left {
-  width: 150px;
-}
-.header-flexbox-left img {
-  width: 100%;
-  aspect-ratio: 3/1;
-  object-fit: cover;
-  object-position: center;
-}
 
 .header-flexbox-right nav a {
   color: var(--grey-shade-light);
-  padding: 26px 14px;
+  padding: 26px 12px;
   font-size: 1.7rem;
   font-weight: 500;
   display: inline-block;
   text-transform: uppercase;
 }
 .header-flexbox-right nav a:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--logo-color);
 }
 
 /* Swiper Slide */
@@ -394,8 +379,28 @@ a {
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }
+/*----- Call us Section------- */
+.call-us-section {
+  width: 100%;
+  background-color: var(--grey-shade-dark);
+}
+.call-us-section div {
+  color: var(--primary-color);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.call-us-section div img {
+  width: 80px;
+}
 
-/* Contact Section */
+/* -----Contact Section------- */
 .contact-section {
   background-image: url(../assets/food.png);
   padding: 70px 0;

@@ -41,18 +41,11 @@
 }
 
 @media (max-width: 768px) {
-  .pre-header {
-    font-size: 1.5rem;
-    font-weight: 500;
-  }
   .header-flexbox {
     flex-direction: column;
     padding: 10px 0;
   }
-  .header-flexbox-left {
-    width: 120px;
-    padding: 0 0 5px 0;
-  }
+
   .header-flexbox-right nav a {
     padding: 13px 10px;
     font-size: 1.5rem;
@@ -89,21 +82,18 @@
   .popup-container {
     width: 90%;
   }
-  .pre-header {
-    flex-direction: column;
-  }
-  .pre-header img {
-    width: 40px;
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-  .pre-header span {
-    font-size: 1.4rem;
-  }
+  /*----- Call us Section------- */
 
-  .header-flexbox-left {
-    width: 105px;
-    padding: 0 0 5px 0;
+  .call-us-section div {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 15px 0;
+  }
+  .call-us-section div img {
+    width: 60px;
+  }
+  .pre-header-logo img {
+    width: 110px;
   }
   .header-flexbox-right nav {
     display: flex;
